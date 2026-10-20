@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoxClover | Calzado de Autor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Barra de Navegación -->
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">NOX<span>CLOVER</span></a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- Sección Principal -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Camina con <span>estilo único</span></h1>
+        <p>Las mejores marcas y modelos para toda la familia. Originales, cómodos y con el estilo que buscas.</p>
+        <a href="#productos" class="btn-primary">Ver Catálogo</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500" alt="Calzado destacado">
+    </div>
+</section>
+
+<!-- Sección de Productos -->
+<section id="productos" class="productos">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestra <span>Colección</span></h2>
+            <p>Encuentra el par ideal para ti y tu familia</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filtros">
+            <button class="filtro-btn active" data-filter="todos">Todos</button>
+            <button class="filtro-btn" data-filter="caballero">Caballero</button>
+            <button class="filtro-btn" data-filter="dama">Dama</button>
+            <button class="filtro-btn" data-filter="nino">Niños</button>
+            <button class="filtro-btn" data-filter="jordan">Jordan</button>
+            <button class="filtro-btn" data-filter="nike">Nike</button>
+            <button class="filtro-btn" data-filter="adidas">Adidas</button>
+            <button class="filtro-btn" data-filter="puma">Puma</button>
+        </div>
+
+        <!-- Grilla de Productos -->
+        <div class="productos-grid">
+            
+            <!-- Jordan Retro 4 -->
+            <div class="producto-card" data-category="caballero jordan">
+                <div class="etiqueta destacado">⭐ DESTACADO</div>
+                <div class="producto-img">
+                    <img src="retro 4.jpg" alt="Jordan Retro 4">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20las%20Jordan%20Retro%204" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Jordan Retro 4</h3>
+                    <p class="marca">Air Jordan</p>
+                    <p class="descripcion">Clásico icónico. Diseño legendario y máxima comodidad.</p>
+                    <p class="precio">$ 450.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20las%20Jordan%20Retro%204" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Jordan Retro 11 -->
+            <div class="producto-card" data-category="caballero jordan">
+                <div class="etiqueta popular">🔥 POPULAR</div>
+                <div class="producto-img">
+                    <img src="retro 11.jpg" alt="Jordan Retro 11">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20las%20Jordan%20Retro%2011" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Jordan Retro 11</h3>
+                    <p class="marca">Air Jordan</p>
+                    <p class="descripcion">Elegancia y rendimiento en un solo diseño legendario.</p>
+                    <p class="precio">$ 490.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20las%20Jordan%20Retro%2011" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Nike -->
+            <div class="producto-card" data-category="caballero nike">
+                <div class="etiqueta nuevo">✨ NUEVO</div>
+                <div class="producto-img">
+                    <img src="tn.jpg" alt="Nike Deportivos">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20los%20Nike%20Deportivos" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Nike tn </h3>
+                    <p class="marca">Nike</p>
+                    <p class="descripcion">Amortiguación superior. Estilo urbano inconfundible.</p>
+                    <p class="precio">$ 320.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20los%20Nike%20Air%20Max" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Adidas -->
+            <div class="producto-card" data-category="dama adidas">
+                <div class="etiqueta favorito">💖 FAVORITO</div>
+                <div class="producto-img">
+                    <img src="ogiy.jpeg" alt="Adidas Dama">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20las%20Adidas%20Dama" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Adidas Ultraboost</h3>
+                    <p class="marca">Adidas</p>
+                    <p class="descripcion">Comodidad extrema. Energía en cada paso que das.</p>
+                    <p class="precio">$ 290.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20las%20Adidas%20Ultraboost" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Puma -->
+            <div class="producto-card" data-category="dama puma">
+                <div class="etiqueta especial">🌟 ESPECIAL</div>
+                <div class="producto-img">
+                    <img src="rs-x.jpg" alt="Puma Dama">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20las%20Puma%20Dama" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Puma RS-X</h3>
+                    <p class="marca">Puma</p>
+                    <p class="descripcion">Diseño audaz. Comodidad y estilo en cada momento.</p>
+                    <p class="precio">$ 260.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20las%20Puma%20RS-X" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Niños Nike -->
+            <div class="producto-card" data-category="nino nike">
+                <div class="etiqueta infantil">🧒 INFANTIL</div>
+                <div class="producto-img">
+                    <img src="junior.jpeg" alt="Nike Niños">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20los%20Nike%20para%20niños" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Nike Junior</h3>
+                    <p class="marca">Nike Kids</p>
+                    <p class="descripcion">Resistentes y divertidos. Diseñados para sus aventuras.</p>
+                    <p class="precio">$ 210.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20los%20Nike%20Junior" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Niños Adidas -->
+            <div class="producto-card" data-category="nino adidas">
+                <div class="etiqueta infantil">🧒 INFANTIL</div>
+                <div class="producto-img">
+                    <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400" alt="Adidas Niños">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20los%20Adidas%20para%20niños" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Adidas Kids</h3>
+                    <p class="marca">Adidas</p>
+                    <p class="descripcion">Seguros y cómodos. Para que corran sin preocuparse.</p>
+                    <p class="precio">$ 195.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20los%20Adidas%20Kids" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dama Nike -->
+            <div class="producto-card" data-category="dama nike">
+                <div class="etiqueta nuevo">✨ NUEVO</div>
+                <div class="producto-img">
+                    <img src="damas.jpeg" alt="Nike Dama">
+                    <div class="producto-overlay">
+                        <button class="ver-btn"><i class="fas fa-eye"></i> Ver</button>
+                        <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20las%20Nike%20Dama" target="_blank" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+                <div class="producto-info">
+                    <h3>Nike React</h3>
+                    <p class="marca">Nike</p>
+                    <p class="descripcion">Suavidad en cada paso. Diseño moderno y femenino.</p>
+                    <p class="precio">$ 280.000</p>
+                    <a href="https://wa.me/573001234567?text=Hola,%20quiero%20pedir%20las%20Nike%20React" target="_blank" class="btn-whatsapp-card">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Nosotros -->
+<section id="nosotros" class="nosotros">
+    <div class="container">
+        <div class="nosotros-content">
+            <div class="nosotros-text">
+                <h2>Sobre <span>Nosotros</span></h2>
+                <p>En <strong>NoxClover</strong> seleccionamos las mejores marcas del mundo para ti y tu familia. Jordan, Nike, Adidas, Puma y más. Calidad, estilo y garantía en cada par.</p>
+                <div class="caracteristicas">
+                    <div class="caracteristica">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Marcas originales</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Para toda la familia</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Envíos a todo el país</span>
+                    </div>
+                    <div class="caracteristica">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Asesoría personalizada</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nosotros-img">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055ec8b3755?w=450" alt="Nuestra tienda">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="contacto">
+    <div class="container">
+        <div class="section-header">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas o quieres otro modelo? ¡Escríbenos!</p>
+        </div>
+        
+        <div class="contacto-grid">
+            <div class="contacto-info">
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>+57 300 123 4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Tu ciudad, Colombia</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Horario</h3>
+                        <p>Lunes a Sábado: 8:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacto-whatsapp">
+                <h3>¿Necesitas ayuda?</h3>
+                <p>Tenemos muchos más modelos disponibles. Escríbenos y con gusto te ayudamos a encontrar tu par ideal.</p>
+                <a href="https://wa.me/573001234567?text=¡Hola!%20Quisiera%20más%20información%20sobre%20sus%20modelos%20de%20calzado" target="_blank" class="btn-whatsapp-principal">
+                    <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer>
+    <div class="container">
+        <p class="footer-logo">NOX<span>CLOVER</span></p>
+        <p>Tu estilo, tu paso, tu suerte ☘️🖤</p>
+        <p>&copy; 2026 NoxClover. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573001234567?text=¡Hola!%20Quisiera%20más%20información" target="_blank" class="whatsapp-flotante">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Modal para ver imagen grande -->
+<div class="modal" id="imagenModal">
+    <span class="cerrar" id="cerrarModal">&times;</span>
+    <img class="modal-contenido" id="imagenGrande">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
